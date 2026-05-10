@@ -1,0 +1,29 @@
+{
+  "name": "DomestiSure \u2014 Household Compliance",
+  "short_name": "DomestiSure",
+  "description": "Household employer compliance made simple. Payslips, contracts, UIF \u2014 all in one place.",
+  "start_url": "https://domestisure.badenhorst-casper.workers.dev/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0B1C2C",
+  "theme_color": "#0B1C2C",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "business",
+    "productivity"
+  ],
+  "lang": "en-ZA"
+}
