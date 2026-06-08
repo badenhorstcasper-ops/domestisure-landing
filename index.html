@@ -216,6 +216,10 @@ nav{
 .pc.hot .pl li{color:rgba(255,255,255,0.8)}
 .pl li::before{content:'✓';color:var(--green);font-weight:700;flex-shrink:0}
 .pcta{display:block;text-align:center;padding:12px;border-radius:10px;font-weight:700;font-size:13.5px;text-decoration:none;transition:all .2s}
+.pcta.out{border:1.5px solid #BBF7D0;color:var(--green3)}
+.pcta.out:hover{background:var(--green-light)}
+.pcta.once{background:var(--navy);color:var(--white)}
+.pcta.once:hover{background:var(--navy3)}
 .pcta.sol{background:var(--green);color:var(--navy)}
 .pcta.sol:hover{background:var(--green2);box-shadow:0 6px 20px rgba(34,197,94,0.3)}
 .price-note{text-align:center;margin-top:18px;font-size:12.5px;color:var(--muted)}
@@ -278,15 +282,15 @@ footer{background:#04100A;padding:36px 5%;display:grid;grid-template-columns:1fr
   </div>
   <div class="nav-end">
     <a class="btn-ghost" href="https://domestisure.badenhorst-casper.workers.dev/login">Sign In</a>
-    <a class="btn-nav" href="https://domestisure.badenhorst-casper.workers.dev/register">Start Now</a>
+    <a class="btn-nav" href="https://domestisure.badenhorst-casper.workers.dev/register">Start</a>
   </div>
 </nav>
 
-<!-- HERO — real photo background -->
+<!-- HERO -->
 <section class="hero">
   <div class="hero-photo"></div>
   <div class="hero-overlay"></div>
-  <img class="hero-logo-right" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAYAAAB/HSuDAAEAAElEQVR4nOz9eXjkV3ngfX/POb+lVkklqVu9qFdv3cYbNnjBYGMwEDAODlsCZIFkXiZPHuZ9rpAFJgnJDOTKkCcB3" alt="DomestiSure App"/>
+  <img class="hero-logo-right" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAYAAAB/HSuDAAEAAElEQVR4nOz9eXjkV3ngfX/POb+lVkklqVu9qFdv3cYbNnjBYGMwEDAODlsCZIFkXiZPHuZ9rpAFJgnJDOTKkCcB3" alt="App"/>
   <div class="hero-content">
     <div class="hero-badge"><span class="live-dot"></span>Available Now</div>
     <h1>Household Compliance,<br><span class="g">Simplified</span></h1>
@@ -393,7 +397,7 @@ footer{background:#04100A;padding:36px 5%;display:grid;grid-template-columns:1fr
 <!-- FOOTER -->
 <footer>
   <div class="fl">
-    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAoACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlbaWmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/2Q==" alt="Logo"/>
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAoACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/2Q==" alt=""/>
     <span>© 2024 DomestiSure. All rights reserved.</span>
   </div>
   <div class="flinks">
